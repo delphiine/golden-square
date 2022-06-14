@@ -5,5 +5,10 @@ RSpec.describe "check if codeword is correct method" do
         result = check_codeword('horse')
         expect(result).to eq "Correct! Come in."
     end
+    it "returns 'Close, but nope.' when the first character is 'h' and the last is 'e' " do
+        result = check_codeword('home') 
+        expect(result).to eq "Close, but nope."
+    end
+
 end
     
