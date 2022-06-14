@@ -9,6 +9,9 @@ RSpec.describe "check if codeword is correct method" do
         result = check_codeword('home') 
         expect(result).to eq "Close, but nope."
     end
-
+    it "returns 'WRONG!' when the codeword is far from correct" do
+        result = check_codeword('door') 
+        expect(result).to eq "WRONG!"
+    end
 end
     
