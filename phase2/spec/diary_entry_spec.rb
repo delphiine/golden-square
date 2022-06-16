@@ -25,7 +25,7 @@ RSpec.describe 'DiaryEntry' do
     end
     context 'reading_chunck method' do
         it "Returns a string with a chunk of the contents that the user could read in the given number of minutes." do
-            diary_entry = DiaryEntry.new("wednesday", "Today I paired with Karolina and it was really nice ")
+            diary_entry = DiaryEntry.new("wednesday", "Today I paired with Karolina and it was really nice")
             results = diary_entry.reading_chunk(1, 2)
             expect(results).to eq "Today I"
         end

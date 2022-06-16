@@ -38,11 +38,3 @@ class DiaryEntry
         end
       end
   end
-
-  entry = DiaryEntry.new("wednesday", "Today I paired with Karolina and it was really nice, yay")
-  puts entry.reading_chunk(1, 2)
-  puts entry.reading_chunk(1, 2)
-  puts entry.reading_chunk(1, 2)
-  puts entry.reading_chunk(1, 2)
-  puts entry.reading_chunk(1, 2)
-  puts entry.reading_chunk(1, 2)
