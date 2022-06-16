@@ -3,7 +3,7 @@ class DiaryEntry
         @title = title
         @contents = contents
         @chunk_index = 0 #(attribute) has to initialize at zero - needs a value for us it. 
-          #It enables us to reuse the index throught each call
+          #It enables us to reuse the index through each call
     end
   
     def title
