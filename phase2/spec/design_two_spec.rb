@@ -1,3 +1,4 @@
+=begin
 require 'design_two'
 
 RSpec.describe 'grammar_checker' do
@@ -5,3 +6,4 @@ RSpec.describe 'grammar_checker' do
         expect(grammar_checker("Hello, world.")).to eq "Your grammar is correct"
     end
 end
+=end
