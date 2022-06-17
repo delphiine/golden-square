@@ -4,16 +4,19 @@ User wants to check if a text is grammatically correct. The user also wants to b
 the amount of text that has passed the grammar review.
 
 2. Design the Method Signature
-The name of the class is 'GrammarStats'. It has three methods: 'initialise', 'check' and 'percentage'.
+The name of the class is 'GrammarStats'. It has three methods: 'initialise', 'check' and 'percentage_good'.
 - The 'initialise' method doesn't return anything, but it initialises the accumulators for tracking the total number
 of times the check method is called and the number of passed grammar checks.
 - The 'check' method returns a boolean
-- The 'percentage' method returns an integer 
+- The 'percentage_good' method returns an integer 
 
 3. Create Examples as Tests
+
+check test examples:
 "Hello, world" => false
 "Hello, word!" => true
 
+percentage_good test examples:
 "Hello, world!" "Hello, world!" Hello, world!" "Hello, world" => 75
 "Hello, world!" "Hello, world" => 50
 "hello, world!" "Hello, world"  => 0
