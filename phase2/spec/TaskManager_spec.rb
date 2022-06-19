@@ -6,7 +6,7 @@
 2. Design the Class Interface
 The name of the class is 'TaskManager'. It has three methods: 'initialize', 'add', print_list and 'remove'.
 - 'initialize': initalizes the '@todo_list' and '@item_num' variables. 
-- 'add': takes a list, numbers it and then adds it to the TODO list 
+- 'add': takes a string, numbers it and then adds it to the TODO list 
 - 'remove': takes a number (as a string) and removes that number of item from the list of TODOs
 - 'print_list' returns the list of items. The items are separated by a new line. Returns 'your TODO list is empty' when the 
    list is empty.
