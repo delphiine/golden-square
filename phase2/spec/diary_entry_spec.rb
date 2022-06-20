@@ -32,8 +32,7 @@ RSpec.describe 'DiaryEntry' do
     end
     it "Returns the remaining words from the content is less than words per minute(s)." do
         diary_entry = DiaryEntry.new("wednesday", "Today I paired with Karolina and it was really nice")
-        results1 = diary_entry.reading_chunk(8, 1)
-        results2 = diary_entry.reading_chunk(8, 1)
-        expect(results2).to eq "really nice"
+        diary_entry.reading_chunk(8, 1)
+        expect(diary_entry.reading_chunk(8, 1)).to eq "really nice"
     end
 end
