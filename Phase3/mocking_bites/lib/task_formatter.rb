@@ -7,8 +7,7 @@ class TaskFormatter
     def format # Returns the task formatted as a string.
        if @task.complete? == true
         return "- [ ] #{@task}"
-       else 
-        return "- [x] #{@task}"
        end
+       return "- [x] #{@task}"
     end
   end
