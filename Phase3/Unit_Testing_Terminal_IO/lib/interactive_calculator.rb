@@ -10,5 +10,4 @@ class InteractiveCalculator
         num_2 = @io.gets.to_i 
         @io.puts num_1 + num_2
     end
-
 end
