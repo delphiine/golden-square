@@ -8,7 +8,7 @@ RSpec.describe TaskFormatter do
             expect(task_formatter.format).to eq "- [ ] Do dishes"
         end
 
-        it "Returns ' - [x] Task title' if the task is not complete" do
+        it "Returns ' - [x] Task title' if the task is complete" do
             fake_task = double(:fake_task, to_s: "Do dishes", complete?: false)
             task_formatter = TaskFormatter.new(fake_task)
             expect(task_formatter.format).to eq "- [x] Do dishes"
