@@ -8,6 +8,6 @@ class InteractiveCalculator
         num_1 = @io.gets.to_i
         @io.puts "Enter another number: "
         num_2 = @io.gets.to_i 
-        @io.puts num_1 + num_2
+        @io.puts num_1 - num_2
     end
 end
